@@ -19,6 +19,7 @@ git chechout -b branchname #create + convert
 git commit -am "change 3 in dev"  # "-am": add 所有改变 并直接 commit
 只有commit的版本才能被恢复或前往，add的或unstaged都会在切换中丢失
 在另一分支中修改并add,commit不会修改掉其他分支(master),尽管是同一文件目录下，只有切回master分支并用git merge another_branchname才会将master更新为分支的， 该操作fast forward不会在log中有commit信息，用git merge --no-ff -m "some signal" branchname才会有commit记录
+有了分支结构，文件修改就不是原来根据位置修改了，而是虚拟的根据分支修改，不同分支下文件内容是不一样的！！
 
 
 git stash #暂存,注意是存在某分支上，而不是跨分支的，故后面要到该分支下pop再用
