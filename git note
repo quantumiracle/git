@@ -1,4 +1,15 @@
 git add  #unstaged(untracked)->staged
-git commit -m "change1 1.py"
+git add .  #add all files in this path, notes the space before .
+git commit -m "change1 1.py"    #only commit could be rememberd by log and reflog, or say recoverd
 git diff #compare unstaged and last commit
 git diff --cached #compared staged and last commit
+git diff HEAD #staged & unstaged
+git status (-s)
+git log
+git reflog #check recent commit/reset changes, each with unique commit ID, using 'git reset --hard ID'could recover to any one committed
+git reset --hard HEAD  #check where is HEAD now
+git reset --hard HEAD  #let HEAD move to last commit
+git reset --hard ID  #let HEAD move to the commit ID
+git log (--oneline)  #check all commit happened before the HEAD
+
+
