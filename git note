@@ -1,0 +1,4 @@
+git add  #unstaged(untracked)->staged
+git commit -m "change1 1.py"
+git diff #compare unstaged and last commit
+git diff --cached #compared staged and last commit
