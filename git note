@@ -11,5 +11,7 @@ git reset --hard HEAD  #check where is HEAD now
 git reset --hard HEAD  #let HEAD move to last commit
 git reset --hard ID  #let HEAD move to the commit ID
 git log (--oneline)  #check all commit happened before the HEAD
+git commit --amend --no-edit   # "--no-edit": 不编辑, 直接合并到上一个 commit
+只有commit的版本才能被恢复或前往，add的或unstaged都会在切换中丢失
 
 
